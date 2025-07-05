@@ -7,9 +7,6 @@ import base64
 # Load API key
 load_dotenv()
 API_KEY = os.getenv("STABILITY_API_KEY")
-st.write(f"API Key loaded: {'Yes' if API_KEY else 'No'}")
-st.write(f"Key Loaded: {API_KEY}")
-
 
 # Initialize session state
 if "history" not in st.session_state:
